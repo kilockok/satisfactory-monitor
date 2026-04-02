@@ -1,0 +1,14 @@
+[Unit]
+Description=Satisfactory Server Monitor
+After=network.target satisfactory.service
+
+[Service]
+Type=simple
+User=kilock
+WorkingDirectory=/home/kilock/satisfactory-monitor
+ExecStart=/usr/bin/node --env-file=.env server.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

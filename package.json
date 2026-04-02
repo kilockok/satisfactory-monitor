@@ -1,0 +1,12 @@
+{
+  "name": "satisfactory-monitor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js"
+  },
+  "dependencies": {
+    "fastify": "^5",
+    "@fastify/static": "^8"
+  }
+}
